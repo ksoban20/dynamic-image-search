@@ -1,0 +1,30 @@
+
+
+/* displayedImages.js styling */
+.photo-list {
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+  /* columns: 6 200px; */
+  gap: 10px;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+}
+
+/* SearchBar.js styling */
+.search-bar {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.search-bar form {
+  display: flex;
+  flex-direction: column;
+}
