@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { dynamicSearch } from './getImages';
 import PhotoList from './photos';
 import SearchBar from './searchBar';
+import './style.css';
 
 const App = () => {
   const [photos, setPhotos] = useState([]);
@@ -10,9 +11,8 @@ const App = () => {
     const result = await dynamicSearch(term);
     setPhotos(result);
   };
-  console.log(photos);
   return (
-    <div>
+    <div className="app">
       <SearchBar onSubmit={onSubmit} />
       <PhotoList images={photos} />
     </div>

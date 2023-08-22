@@ -4,7 +4,9 @@ import './style.css';
 const DisplayedImages = ({ image }) => {
   return (
     <div>
-      <img src={image.src.portrait} alt={image.alt_description} />
+      <a href={image.url} target="_blank">
+        <img src={image.src.portrait} alt={image.alt} />
+      </a>
     </div>
   );
 };
